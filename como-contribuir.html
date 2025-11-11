@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Repositorio Colaborativo</title>
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/como-contribuir.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-container">
+        <div class="header-logos">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="header-logo-link">
+            <img
+              src="assets/Github.png"
+              alt="GitHub"
+              class="header-logo-img" />
+          </a>
+          <span class="logo-separator">×</span>
+          <a href="https://www.linkedin.com/company/dsc-utp/" target="_blank" rel="noopener noreferrer" class="header-logo-link">
+            <img
+              src="assets/Logo_DSCUTP.png"
+              alt="Developer Student Clubs UTP"
+              class="header-logo-img" />
+          </a>
+          <span class="logo-separator">×</span>
+          <a href="https://www.linkedin.com/company/xperience-campus/" target="_blank" rel="noopener noreferrer" class="header-logo-link">
+            <img
+              src="assets/Logo_XperienceCampus.jpg"
+              alt="Xperience Campus"
+              class="header-logo-img" />
+          </a>
+        </div>
+        <nav class="header-nav" id="headerNav">
+          <a href="index.html" class="nav-link">Inicio</a>
+          <a href="index.html#participantes" class="nav-link">Colaboradores</a>
+          <a href="como-contribuir.html" class="nav-link active"
+            >Cómo Contribuir</a
+          >
+        </nav>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Overlay para menú móvil -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Instrucciones para contribuir -->
+      <section class="contribute-section">
+        <div class="contribute-container">
+          <div class="steps-container">
+            <!-- Paso 1: Acceder al Repositorio -->
+            <div class="step">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h3>
+                  <i class="fas fa-globe"></i> Accede y Forkea el Repositorio
+                </h3>
+                <p>
+                  Ve al repositorio oficial en GitHub y familiarízate con el
+                  proyecto. Revisa el README y la estructura del proyecto. Luego
+                  dale click a Fork y crear un fork del repositorio.
+                </p>
+                <div class="step-image">
+                  <img
+                    src="assets/GuiaPasoAPaso/Paso1.png"
+                    alt="Paso 1: Acceder al repositorio"
+                    class="guide-image" />
+                </div>
+                <div class="code-example">
+                  <pre><code># URL del repositorio
+https://github.com/Dav082004/RepoColaborativo</code></pre>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paso 2: Fork del Repositorio -->
+            <div class="step">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h3>
+                  <i class="fas fa-code-branch"></i> Haz Fork del Repositorio
+                </h3>
+                <p>
+                  Haz clic en el botón "Fork" en la esquina superior derecha del
+                  repositorio. Esto creará una copia del proyecto en tu cuenta
+                  de GitHub.
+                </p>
+                <div class="step-image">
+                  <img
+                    src="assets/GuiaPasoAPaso/Paso2.png"
+                    alt="Paso 2: Fork del repositorio"
+                    class="guide-image" />
+                </div>
+                <div class="info-box">
+                  <p>
+                    <i class="fas fa-info-circle"></i> El fork te permite
+                    trabajar en tu propia copia sin afectar el original.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paso 3: Clonar el Fork -->
+            <div class="step">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h3><i class="fas fa-download"></i> Clona tu Fork</h3>
+                <p>
+                  Verificar que se forkeo y esta en tu perfil ya que debe decir
+                  tu_perfil / RepoColaborativo <br />
+                  Despues clona tu fork a tu computadora local para poder
+                  trabajar en él. Usa el botón "Code" y copia la URL.
+                </p>
+                <div class="step-image">
+                  <img
+                    src="assets/GuiaPasoAPaso/Paso3.png"
+                    alt="Paso 3: Clonar el fork"
+                    class="guide-image" />
+                </div>
+                <div class="code-example">
+                  <pre><code># Clona tu fork (reemplaza TU_USUARIO)
+git clone https://github.com/TU_USUARIO/RepoColaborativo.git
+cd RepoColaborativo</code></pre>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paso 4: Configurar Git -->
+            <div class="step">
+              <div class="step-number">4</div>
+              <div class="step-content">
+                <h3><i class="fas fa-cog"></i> Configura Git</h3>
+                <p>
+                  Configura tu información de Git si no lo has hecho antes. Esto
+                  es importante para identificar tus commits. Despues cuando
+                  estes en la carpeta donde quieras clonar tu repo forkeado
+                  tienes que escribir <b>git clone (URL de tu fork)</b>
+                </p>
+                <div class="step-image">
+                  <img
+                    src="assets/GuiaPasoAPaso/Paso4.png"
+                    alt="Paso 4: Configurar Git"
+                    class="guide-image" />
+                </div>
+                <p>
+                  <b>Nota:</b> Asegurate de que este configurado correctamente
+                </p>
+                <div class="code-example">
+                  <pre><code># Configura tu nombre y email
+git config --global user.name "Tu Nombre"
+git config --global user.email "tu-email@ejemplo.com"
+
+# Verifica la configuración
+git config --list</code></pre>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paso 5: Crear Nueva Rama -->
+            <div class="step">
+              <div class="step-number">5</div>
+              <div class="step-content">
+                <h3>
+                  <i class="fas fa-project-diagram"></i> Crea una Nueva Rama
+                </h3>
+                <p>
+                  Crea una rama específica para tu contribución. Esto mantiene
+                  tu trabajo organizado y separado de la rama principal. Si te
+                  das cuenta sale como (main) eso hace referencia a la rama
+                  actual donde estas, es por eso que cuando creas una nueva rama
+                  en este caso se llama add-gat1t0, donde salia main ahora dice
+                  add-gat1t0 entonces con eso confirmacion el cambio de rama
+                </p>
+                <div class="step-image">
+                  <img
+                    src="assets/GuiaPasoAPaso/Paso5.png"
+                    alt="Paso 5: Crear nueva rama"
+                    class="guide-image" />
+                </div>
+                <div class="code-example">
+                  <pre><code># Crea y cambia a una nueva rama
+git checkout -b feat/add-tu-nickname
+
+# Verifica que estás en la nueva rama
+git branch</code></pre>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paso 6: Abrir el Editor -->
+            <div class="step">
+              <div class="step-number">6</div>
+              <div class="step-content">
+                <h3><i class="fas fa-edit"></i> Abre el Editor de Código</h3>
+                <p>
+                  Abre el proyecto en tu editor favorito (VS Code, Sublime,
+                  etc.). Localiza el archivo <code>contributors-data.js</code>
+                  para poder agregar tu informacion como nombre, nickname de
+                  github, github, linkedin, descripcion y hobbies.
+                </p>
+                <div class="step-image">
+                  <img
+                    src="assets/GuiaPasoAPaso/Paso6.png"
+                    alt="Paso 6: Abrir editor"
+                    class="guide-image" />
+                </div>
+                <div class="code-example">
+                  <pre><code># Si usas VS Code
+code .
+
+# O abre manualmente el archivo
+# contributors-data.js</code></pre>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paso 8: Verificar Cambios -->
+            <div class="step">
+              <div class="step-number">7</div>
+              <div class="step-content">
+                <h3>
+                  <i class="fas fa-search"></i> Verifica y sube tus Cambios
+                </h3>
+                <p>
+                  Revisa que tus cambios sean correctos y que no hayas
+                  modificado accidentalmente otras partes del archivo.
+                </p>
+                <div class="step-image">
+                  <img
+                    src="assets/GuiaPasoAPaso/Paso7.png"
+                    alt="Paso 8: Verificar cambios"
+                    class="guide-image" />
+                </div>
+                <div class="code-example">
+                  <pre><code># Ver qué archivos han cambiado
+git status
+
+#Para juntar todos los cambios
+git add .
+
+#Para guardar los cambios
+git commit -m "feat/add-gat1t0"
+
+#Para subir a tu repositorio tu rama con cambios
+git push origin feat/add-gat1t0
+</code></pre>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paso 8: Hacer Commit -->
+            <div class="step">
+              <div class="step-number">8</div>
+              <div class="step-content">
+                <h3>
+                  <i class="fas fa-save"></i> Iniciamos Pull Request de los
+                  Cambios
+                </h3>
+                <p>
+                  Verificamos que se haya creado la nueva rama y que este los
+                  cambios que hicimos. Luego de verificar que todo esta
+                  correcto, le hacemos click a comparar y pull request.(Boton
+                  verde)
+                </p>
+                <div class="step-image">
+                  <img
+                    src="assets/GuiaPasoAPaso/Paso8.png"
+                    alt="Paso 9: Hacer commit"
+                    class="guide-image" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Paso 9: Push a tu Fork -->
+            <div class="step">
+              <div class="step-number">9</div>
+              <div class="step-content">
+                <h3>
+                  <i class="fas fa-cloud-upload-alt"></i> Abrir PR con la repo
+                  de origin
+                </h3>
+                <p>
+                  Tenemos que darle a Crear Pull Request(Boton verde) para que
+                  aparezca en el repositorio de origin y pueda ser revisada por
+                  el dueño del repositorio. Tambien puedes agregar una
+                  descripción detallada de los cambios que realizaste y por qué
+                  son importantes.
+                </p>
+                <div class="step-image">
+                  <img
+                    src="assets/GuiaPasoAPaso/Paso9.png"
+                    alt="Paso 10: Push a fork"
+                    class="guide-image" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Paso 10: Crear Pull Request -->
+            <div class="step">
+              <div class="step-number">10</div>
+              <div class="step-content">
+                <h3><i class="fas fa-paper-plane"></i> Pull Request Creada</h3>
+                <p>
+                  Una vez que hayas creado el Pull Request, verifica que todo
+                  este bien y que no haya errores al momento de juntar los
+                  cambios. Y esperar que aprueben tu Pull Request.
+                </p>
+                <div class="step-image">
+                  <img
+                    src="assets/GuiaPasoAPaso/Paso10.png"
+                    alt="Paso 11: Crear PR"
+                    class="guide-image" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Paso 12: Esperar Auto-merge -->
+            <div class="step">
+              <div class="step-number">11</div>
+              <div class="step-content">
+                <h3><i class="fas fa-robot"></i> ¡PR Aprobada!</h3>
+                <p>
+                  Si todo está correcto, el sistema automáticamente validará tu
+                  PR y lo mergeará. ¡Aparecerás en la página web en unos
+                  minutos!
+                </p>
+                <div class="step-image">
+                  <img
+                    src="assets/GuiaPasoAPaso/Paso11.png"
+                    alt="Paso 12: Auto-merge"
+                    class="guide-image" />
+                </div>
+                <div class="info-box success">
+                  <h4>
+                    <i class="fas fa-magic"></i> ¿Qué pasa automáticamente?
+                  </h4>
+                  <ul>
+                    <li>
+                      ✅ <strong>Validación:</strong> Se verifica el formato y
+                      datos
+                    </li>
+                    <li>
+                      🤖 <strong>Auto-merge:</strong> Si es válido, se mergea
+                      automáticamente
+                    </li>
+                    <li>
+                      🚀 <strong>Deploy:</strong> La página web se actualiza
+                    </li>
+                    <li>
+                      💬 <strong>Comentario:</strong> Recibes confirmación en el
+                      PR
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de validaciones automáticas -->
+      <section class="validation-section">
+        <div class="validation-container">
+          <h2 class="section-title">
+            <i class="fas fa-robot"></i>
+            Sistema de Validación Automática
+          </h2>
+          <div class="validation-grid">
+            <div class="validation-item">
+              <div class="validation-icon success">
+                <i class="fas fa-check"></i>
+              </div>
+              <h3>Validación de Formato</h3>
+              <p>
+                El sistema verifica que el formato de tu contribución sea
+                correcto y que todos los campos requeridos estén presentes.
+              </p>
+            </div>
+            <div class="validation-item">
+              <div class="validation-icon info">
+                <i class="fas fa-sync"></i>
+              </div>
+              <h3>Auto-merge</h3>
+              <p>
+                Si todas las validaciones pasan, tu PR será automáticamente
+                mergeado y aparecerás en la página principal.
+              </p>
+            </div>
+            <div class="validation-item">
+              <div class="validation-icon warning">
+                <i class="fas fa-exclamation-triangle"></i>
+              </div>
+              <h3>Corrección de Errores</h3>
+              <p>
+                Si hay errores, recibirás comentarios específicos sobre qué
+                corregir. Puedes hacer nuevos commits para solucionarlos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de ejemplos -->
+      <section class="examples-section">
+        <div class="examples-container">
+          <h2 class="section-title">
+            <i class="fas fa-code"></i>
+            Ejemplos de Contribución
+          </h2>
+          <div class="examples-grid">
+            <div class="example-item">
+              <h3>
+                <i class="fas fa-check-circle" style="color: #10b981"></i>
+                Ejemplo Correcto
+              </h3>
+              <div class="code-example">
+                <pre><code>{
+  name: "Ana María González",
+  nickname: "anagonzalez",
+  github: "https://github.com/anagonzalez",
+  linkedin: "https://linkedin.com/in/ana-gonzalez-dev",
+  description: "Estudiante de Ingeniería de Sistemas especializada en desarrollo web",
+  hobbies: ["Programación", "Lectura", "Yoga", "Fotografía"]
+},</code></pre>
+              </div>
+            </div>
+            <div class="example-item">
+              <h3>
+                <i class="fas fa-times-circle" style="color: #ef4444"></i>
+                Errores Comunes
+              </h3>
+              <div class="error-list">
+                <div class="error-item">
+                  <i class="fas fa-times"></i>
+                  <span>Falta la coma al final del objeto</span>
+                </div>
+                <div class="error-item">
+                  <i class="fas fa-times"></i>
+                  <span>URL de GitHub incompleta o incorrecta</span>
+                </div>
+                <div class="error-item">
+                  <i class="fas fa-times"></i>
+                  <span>Más de 4 hobbies en el array</span>
+                </div>
+                <div class="error-item">
+                  <i class="fas fa-times"></i>
+                  <span
+                    >Descripción demasiado larga (más de 150 caracteres)</span
+                  >
+                </div>
+                <div class="error-item">
+                  <i class="fas fa-times"></i>
+                  <span>Nickname duplicado (ya existe en el sistema)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-content">
+            <div class="footer-left">
+              <div class="footer-logo">
+                <div>
+                  <p class="footer-description"><b>Dav082004🚩</b></p>
+                </div>
+              </div>
+              <p class="footer-description">
+                Proyecto colaborativo para aprender Git, GitHub y desarrollo web
+              </p>
+            </div>
+            <div class="footer-right">
+              <div class="footer-links">
+                <a
+                  href="https://github.com/Dav082004/RepoColaborativo"
+                  target="_blank">
+                  <i class="fab fa-github"></i>
+                  Repositorio
+                </a>
+                <a href="index.html">
+                  <i class="fas fa-home"></i>
+                  Volver al Inicio
+                </a>
+              </div>
+              <p class="footer-credit">
+                <i class="fas fa-heart" style="color: #ff6b6b"></i>
+                Hecho con amor por la comunidad
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="js/como-contribuir.js"></script>
+  </body>
+</html>
