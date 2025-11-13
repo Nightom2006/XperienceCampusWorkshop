@@ -142,9 +142,21 @@ flowchart TD
 
 ## 🤖 Sistema de Validación Inteligente
 
+### 🛠️ Herramientas de Validación
+
+1. **🔍 Validador Local** - `validate-local.js`
+   - Valida tu contribución antes de hacer commit
+   - Mismo comportamiento que el sistema automático
+   - Ahorra tiempo detectando errores localmente
+
+2. **🤖 GitHub Action** - Validación automática en PRs
+   - Se ejecuta automáticamente al crear/actualizar PRs
+   - Resuelve conflictos de merge automáticamente
+   - Mergea automáticamente si todas las validaciones pasan
+
 ### ✅ Validaciones Automáticas
 
-Nuestro bot validador revisa automáticamente:
+Nuestro sistema de validación revisa automáticamente:
 
 | Validación | Descripción | ❌ Error Común |
 |------------|-------------|----------------|
@@ -166,6 +178,9 @@ Nuestro bot validador revisa automáticamente:
 #### 💡 **Mejores Prácticas**
 
 ```bash
+# ✅ Validar localmente ANTES de commit (Recomendado)
+node validate-local.js       # Ejecuta las mismas validaciones que el bot
+
 # ✅ Verificar antes de commit
 git status                    # Ver qué archivos cambiaron
 git diff contributors-data.js # Ver exactamente qué modificaste
@@ -177,6 +192,12 @@ git commit -m "feat: add profile for [tu-nickname]"
 git push origin feat/new-tu-nickname
 # Debes ver: "remote: Create a pull request for 'feat/new-tu-nickname'"
 ```
+
+#### 🤖 **Validación Automática**
+- Al crear tu PR, el **GitHub Action** validará automáticamente tu contribución
+- Si hay errores, recibirás un comentario con detalles específicos
+- Si todo está correcto, tu PR será **mergeado automáticamente**
+- El sistema resuelve **conflictos de merge automáticamente** para evitar problemas entre contribuidores
 
 #### 🆘 **Errores Frecuentes y Soluciones**
 
