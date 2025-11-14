@@ -15,6 +15,21 @@
     ]
   },
   {
+    "name": "Pepito",
+    "nickname": "Pepito",
+    "github": "https://github.com/Pepito",
+    "linkedin": "https://linkedin.com/in/Pepito-dev",
+    "instagram": "https://instagram.com/Pepito.dev",
+    "image": "https://github.com/Pepito.png",
+    "description": "Full-stack developer apasionada por JavaScript y React",
+    "hobbies": [
+      "Programación",
+      "Open Source",
+      "Gaming",
+      "Fotografía"
+    ]
+  },
+  {
     "name": "OctocatChambeador",
     "nickname": "xde268106-lab",
     "github": "https://github.com/xde268106-lab",
